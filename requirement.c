@@ -34,7 +34,7 @@ static char *my_strncpy(char *dest, char *src, int n)
     return (dest);
 }
 
-static int word_count(char *str)
+static int word_count(const char *str)
 {
     int   i;
     int   word;
@@ -43,8 +43,8 @@ static int word_count(char *str)
     i = 0;
     while (str != NULL && str[i] != '\0') {
         if (end_line(str[i]) == 1 && end_line(str[i + 1]) == 0)
-            word = word + 1;
-        i = i + 1;
+            word += 1;
+        i += 1;
         }
     return (word);
 }

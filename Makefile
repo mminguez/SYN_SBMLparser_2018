@@ -12,6 +12,7 @@ TEST_SRC	=	$(realpath ./tests)
 SRC	=	$(SRC_DIR)/sbml.c		\
 		$(SRC_DIR)/parser.c		\
 		$(SRC_DIR)/file.c		\
+		$(SRC_DIR)/str_tab.c	\
 		requirement.c
 
 TESTS	=	$(TEST_SRC)/test1.c	\

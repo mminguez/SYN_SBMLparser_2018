@@ -13,6 +13,7 @@
 
 char *open_text(char *path);
 char **my_str_to_word_array_synthesis(char const *str);
-char **parser(char *sbml);
+char ***parser(char *sbml);
+char **my_str_to_wordtab(char *str);
 
 #endif /* !SBML_H_ */

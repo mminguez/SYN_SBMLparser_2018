@@ -58,6 +58,7 @@ tests_run:	re
 	gcc -o unit_tests *.o -lcriterion -lgcov
 	./unit_tests --always-succeed
 	gcovr
+	##just for pull request
 
 %.o:	%.c
 	@$(CC) -o $@ -c $< -W $(INCLUDE) && \
